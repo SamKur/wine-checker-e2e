@@ -6,6 +6,8 @@ import mlflow
 import mlflow.sklearn
 import numpy as np
 import joblib
+import shutil
+import os
 
 from src.datascience.entity.config_entity import ModelEvaluationConfig
 from src.datascience.constants import *
@@ -70,8 +72,12 @@ class ModelEvaluation:
             # else:
             #     mlflow.sklearn.log_model(model, "model")
 
+            save_path = "artifacts/model"
+            if os.path.exists(save_path):
+                shutil.rmtree(save_path)
+
             # save model locally
-            mlflow.sklearn.save_model(model, "artifacts/model")
+            mlflow.sklearn.save_model(model, save_path)
 
             # log the folder as an artifact
-            mlflow.log_artifacts("artifacts/model", artifact_path="model")
+            mlflow.log_artifacts(save_path, artifact_path="model")
