@@ -1,0 +1,14 @@
+artifact_uri: file:///D:/Documents/NewCodePractice/e2eMLOps/wine-checker/mlruns/0/1a609eb3ebc547089d1da4d9d2955a4a/artifacts
+end_time: 1755406524422
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1a609eb3ebc547089d1da4d9d2955a4a
+run_name: treasured-carp-617
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1755406516928
+status: 3
+tags: []
+user_id: sk
