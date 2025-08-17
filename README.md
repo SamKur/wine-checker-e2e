@@ -24,3 +24,18 @@
 6. Update the components
 7. Update the pipeline 
 8. Update the main.py
+
+# Repos
+
+https://github.com/SamKur/wine-checker-e2e
+
+https://dagshub.com/susamay.sk/wine-checker-e2e
+
+https://dagshub.com/susamay.sk/wine-checker-e2e.mlflow
+
+# Saving model & artifacts to AWS S3
+Using AWS cli commands directly to sync files wrt S3 bucket
+Requires AWS CLI installed and credentials configured (aws configure).
+Uses aws s3 sync under the hood (good for big directories, handles diffs).
+
+# AWS ECR (pushing docker image)
